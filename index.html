@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vejr app</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Check vejret</h1>
+    <input type="text" id="cityInput" placeholder="Indtast bynavn" />
+    <button id="btnGetWeather">Hent vejr</button>
+
+    <div id="weatherResult" class="result hidden">
+      <h2 id="cityName"></h2>
+      <p id="coords"></p>
+      <img id="weatherIcon" alt="Vejrikon" />
+      <p id="temperature"></p>
+    </div>
+
+    <p id="errorMessage" class="error"></p>
+  </div>
+  <script src="secretstuff.js" defer></script>
+  <script src="script.js" defer></script>
+</body>
+</html>
